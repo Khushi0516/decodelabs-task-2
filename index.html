@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Tourist Places</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <nav>
+        <div class="logo">Explore Tourist Places</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Beautiful Tourist Places</h1>
+            <p>
+                Explore beautiful tourist destinations filled with culture,
+                history, beaches, temples, and unforgettable experiences.
+            </p>
+            <a href="#places" class="btn">Explore Places</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2> MUMBAI </h2>
+        <h3>Why Visit Mumbai?</h3>
+        <p>
+            Mumbai is one of India’s most vibrant cities. From the famous
+            Gateway of India to the peaceful Marine Drive and lively Juhu Beach,
+            Mumbai offers unforgettable travel experiences for everyone.
+        </p>
+    </section>
+
+    <section class="places" id="places">
+        <h2>Top Places to Visit</h2>
+
+        <div class="card-container">
+            <div class="card" data-place="gateway of india">
+                <img src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=1000&q=80" alt="Gateway of India" width="320" height="220">
+                <h3>Gateway of India</h3>
+                <p>A historic monument and one of Mumbai’s most iconic landmarks.The Gateway of India is 
+                an arch-monument, completed in 1924, on the waterfront of Mumbai, Maharashtra, India. 
+                It was erected to commemorate the landing of King George V of the United Kingdom for his 
+                coronation as the Emperor of India in December 1911 at Strand Road near Wellington Fountain.</p>
+            </div>
+
+            <div class="card" data-place="juhu beach">
+                <img src="juhubeach.jpeg" alt="Juhu Beach" width="320" height="220">
+                <h3>Juhu Beach</h3>
+                <p>Enjoy sunsets, street food, and relaxing walks by the sea.Juhu Beach is Mumbai's 
+                longest and most popular beach, located in a posh Western suburb known for its vibrant 
+                evening street food scene, iconic sunset views, and lively atmosphere. Open 24 hours, 
+                it is a bustling spot for tourists and locals to enjoy delicacies like bhel puri and 
+                pani puri along the Arabian Sea. </p>
+            </div>
+
+            <div class="card" dat-place="marine drive">
+                <img src="Mumbai.jpg" alt="Marine Drive" width="320" height="220">
+                <h3>Marine Drive</h3>
+                <p>Marine Drive in Mumbai is a famous 3.6-kilometer C-shaped promenade along the 
+                Arabian Sea, officially known as Netaji Subhash Chandra Bose Road. Known as 
+                the "Queen's Necklace" due to its stunning, glowing night-time appearance, 
+                it is a premier landmark for walks, sunsets, and nightlife in South Mumbai.</p>
+            </div>
+            <div class="card" data-place="trimbakeshwar jyotirling">
+                <img src="nashik.jpeg" alt="Trimbakeshwar Jyotirling Mandir" width="320" height="220">
+                <h3>Trimbakeshwar Jyotirling</h3>
+                <p>Trimbakeshwar Shiva Temple is an ancient Hindu temple in the town of Trimbak, 
+                in the Trimbakeshwar tehsil, in the Nashik District of Maharashtra, India, 
+                28 km from the city of Nashik and 40 km from Nashik road.</p>
+            </div>
+             <div class="card" data-place="shree siddhivinayak temple">
+                <img src="siddhivinayak.jpeg" alt="Shree Siddhivinayak Temple" width="320" height="220">
+                <h3>Shree Siddhivinayak Temple</h3>
+                <p>The Shri Siddhivinayak Ganapati Mandir is a Hindu temple dedicated to Ganesha.
+                 It is located in Prabhadevi neighbourhood of Mumbai, Maharashtra, India. 
+                 It was originally built by Laxman Vithu and Deubai Patil on 19 November 1801.
+                 It is one of the most popular Hindu temples in Mumbai.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="contact">
+        <h2>Plan Your Dream  Trip</h2>
+        <p>Tell us your favorite tourist place you would love to visit.</p>
+
+        <form id="tripForm">
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" placeholder="Enter your Name" required>
+            <label for="favoritePlace">Favorite tourist place</label>
+            <input type="text" id="favoritePlace" placeholder="Enter your favorite tourist place" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="dynamicMessage"></p>
+        
+        <div class="interactive-buttons">
+            <button onclick="showWelcome()">Welcome Alert</button>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+
+    </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Explore Tourist Places | Designed for travel lovers.</p>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
